@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.spsmb.tomsa.programkotestik.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" text="Žáci a jejich průměry" textFill="blueviolet">
+      <font>
+         <Font name="Comic Sans MS" size="18.0" />
+      </font></Label>
+   <Label text="Žáci" />
+
+               <ChoiceBox fx:id="vyberZaka" prefHeight="25.0" prefWidth="100.0">
+      <effect>
+         <Glow level="0.52" />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="CLOSED_HAND" />
+      </cursor>
+      <VBox.margin>
+         <Insets left="30.0" right="10.0" top="30.0" />
+      </VBox.margin></ChoiceBox>
+   <Label text="Předmět" />
+               <ChoiceBox fx:id="text1" prefHeight="20" prefWidth="120">
+      <padding>
+         <Insets left="30" right="30" />
+      </padding>
+      <effect>
+         <MotionBlur />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="CLOSED_HAND" />
+      </cursor></ChoiceBox>
+    <TextField fx:id="cislicko" prefHeight="50" prefWidth="60" />
+    <TextField fx:id="text2" prefHeight="80.0" prefWidth="50.0" />
+   <Button fx:id="tlacitko" mnemonicParsing="false" onMouseClicked="#onUkazatButtonClick" text="Ukazat" textAlignment="CENTER" textFill="blue" />
+   <effect>
+      <Blend />
+   </effect>
+
+</VBox>
